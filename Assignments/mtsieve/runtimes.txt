@@ -1,0 +1,39 @@
+/*******************************************************************************
+ * Name        : runtimes.txt
+ * Author      : Michael DelGaudio & Sunmin Lee
+ * Date        : 06/24/2020
+ * Description : Runtimes for mtsieve
+ * Pledge      : I pledge my honor that I have abided by the Stevens Honor System.
+ ******************************************************************************/
+
+Time Requirement:
+
+Mike CPU:
+./mtsieve -s100 -e200000000 -t1 : 0m2.998s
+./mtsieve -s100 -e200000000 -t2 : 0m1.883s
+./mtsieve -s100 -e200000000 -t3 : 0m1.558s
+./mtsieve -s100 -e200000000 -t4 : 0m1.422s
+./mtsieve -s100 -e200000000 -t5 : 0m1.421s
+./mtsieve -s100 -e200000000 -t6 : 0m1.453s
+./mtsieve -s100 -e200000000 -t7 : 0m1.391s
+./mtsieve -s100 -e200000000 -t8 : 0m1.372s
+./mtsieve -s100 -e200000000 -t9 : 0m1.315s
+./mtsieve -s100 -e200000000 -t10 : 0m1.313s
+./mtsieve -s100 -e200000000 -t11 : 0m1.278s
+./mtsieve -s100 -e200000000 -t12 : 0m1.285s
+
+Sunmin's CPU:
+./mtsieve -s100 -e200000000 -t1 : 0m2.476s
+./mtsieve -s100 -e200000000 -t2 : 0m1.834s
+./mtsieve -s100 -e200000000 -t3 : 0m4.993s
+./mtsieve -s100 -e200000000 -t4 : 0m1.737s
+
+
+Questions Requirement:
+
+ Mike's CPU: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+ Sunmin's CPU: Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz
+--------------------------------------------------------------
+Q: Does the time scale linearly with the number of threads? 
+A: No, our time is not scaling linearly with our number of threads.
+   At around 5 threads we can notice that the time change is absolutely negligible (1.422s - 1.421s). After this, the numbers plateau slightly but results become less valuable. 
